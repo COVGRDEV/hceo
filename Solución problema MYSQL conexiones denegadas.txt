@@ -1,0 +1,16 @@
+-- Revisar rangos de puertos dinámicos TCP/UDP
+netsh int ipv4 show dynamicport tcp
+netsh int ipv4 show dynamicport udp
+netsh int ipv6 show dynamicport tcp
+netsh int ipv6 show dynamicport udp
+
+-- Ampliar rangos a
+netsh int ipv4 set dynamicport tcp start=32768 num=32768
+netsh int ipv4 set dynamicport udp start=32768 num=32768
+netsh int ipv6 set dynamicport tcp start=32768 num=32768
+netsh int ipv6 set dynamicport udp start=32768 num=32768
+
+https://support.microsoft.com/en-us/help/929851/the-default-dynamic-port-range-for-tcp-ip-has-changed-in-windows-vista
+
+-- Se debe agregar al registro una variable TcpTimedWaitDelay
+https://docs.microsoft.com/en-us/biztalk/technical-guides/settings-that-can-be-modified-to-improve-network-performance

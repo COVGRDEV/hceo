@@ -1,0 +1,10 @@
+
+
+** Consulta para tipos de cita + tipos de consulta
+
+SELECT tc.nombre_tipo_cita, tcc.nombre_tipo_cons, tcc.pagina_cons, tcd.orden
+FROM tipos_citas tc
+INNER JOIN tipos_citas_det tcd ON tcd.id_tipo_cita = tc.id_tipo_cita
+INNER JOIN tipos_consultas tcc ON tcc.id_tipos_cons = tcd.id_tipo_cons
+WHERE tc.id_tipo_cita = 1
+ORDER BY tcd.orden

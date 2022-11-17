@@ -1,0 +1,1 @@
+function imprimir_anexo_hc(){var _1="id_hc="+$("#hdd_id_hc").val();llamarAjax("../historia_clinica/impresion_historia_clinica.php",_1,"d_impresion_hc","imprSelec(\"d_impresion_hc\")");};

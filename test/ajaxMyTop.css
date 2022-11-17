@@ -1,0 +1,93 @@
+body {
+	font-family:arial,sans-serif;
+	margin-top: 0px;
+}
+a:link, a:visited, a:active {
+	color: #ffffff;
+}
+
+a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+.textInput {
+	background: url(images/textInput.gif) top left no-repeat;
+	border: 0;
+	width: 90px;
+	height: 18px; 
+	padding: 3px;
+	font-size: smaller;
+	color: #999;
+	vertical-align: baseline; 
+}
+.dbl {
+	background-color: #16439e;
+}
+#aggStats{
+	background: url(images/aggStats.jpg) top left no-repeat;
+	background-color: #000000;
+	height: 0px;
+	width: 800px;
+	color: #ffffff;
+}
+#intervalBlock{
+	background-color: #5A82CB;
+	border: black thick;
+	color: #ffffff;
+	font-size: smaller;
+	height: 36px;
+	text-align: center;
+	width:800px;
+}
+.fixedHeadBlock {
+	background-color: #5A82CB;
+	width: 800px;
+	height: 26px;
+	padding-top: 2px;
+	vertical-align: middle; 
+	font-size: smaller;
+	color: #ffffff;
+}
+
+div.console {
+	position: absolute; 
+	right: 20px; 
+	top: 12px; 
+	height: 500px; 
+	width: 200px; 
+	font-size: xx-small; 
+	border: 1px solid black; 
+	overflow: auto
+}
+
+.Columns {
+	overflow: auto; 
+	width: 800px; 
+	font-size: smaller
+}
+
+.Column {
+	position: relative; 
+	float: left; 
+	width: 99px;
+	height: 20px
+}
+
+.dispHeader {
+	background: url(images/headerBack.gif) top left no-repeat;
+	height: 60px; 
+	width: 800px;
+	padding-left: 4px;
+}
+
+.dataHeader {
+	color: #ffffff; 
+	vertical-align: middle
+}
+
+.dataRow {background-color: #ffffff; color: #000000;}
+.selectedDataRow {background-color: #5A82CB; color: #ffffff;}
+.dataDetail { border-top: 1px solid #c0c5df; border-right: 1px solid #ffffff; font-size: smaller; overflow: hidden}
+
+.killInput {position: relative; float:left;}
+.killDisplay {position: relative; float: left; vertical-align: middle}
